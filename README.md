@@ -25,6 +25,7 @@
 <h2>INSERE O CÓDIGO</h2>
 
 <input type="password" id="codigo" placeholder="Código">
+<br><br>
 <button onclick="verificar()">ENTRAR</button>
 
 <p id="mensagem"></p>
@@ -33,7 +34,10 @@
 function verificar() {
     const codigo = document.getElementById("codigo").value;
     if (codigo === "19011997") {
-        document.body.innerHTML = "<h2>ACESSO CONCEDIDO</h2><p>A pasta será aberta em breve.</p>";
+        document.body.innerHTML = `
+            <h2>ACESSO CONCEDIDO</h2>
+            <p>A pasta será aberta em breve.</p>
+        `;
     } else {
         document.getElementById("mensagem").innerText = "CÓDIGO INCORRETO";
     }

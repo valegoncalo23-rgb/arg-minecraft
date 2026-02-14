@@ -36,7 +36,7 @@ function verificar() {
     if (codigo === "19011997") {
         document.body.innerHTML = `
             <h2>ACESSO CONCEDIDO</h2>
-            <p>A pasta será aberta em breve.</p>
+            <p>https://drive.google.com/drive/u/2/folders/13DUZfx7QjPa2ebb-QoXMeqlmaTSjOPB2</p>
         `;
     } else {
         document.getElementById("mensagem").innerText = "CÓDIGO INCORRETO";
